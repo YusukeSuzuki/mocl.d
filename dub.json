@@ -1,0 +1,25 @@
+{
+	"name": "mocl.d",
+	"description": "OpenCL D Wrapper Library.",
+	"copyright": "Copyright © 2014, Yusuke Suzuki",
+	"authors": ["Yusuke Suzuki"],
+	"license" : "Boost Software License, Version 1.0",
+	"dependencies": {
+		"opencl" :">=1.1.2"
+	},
+	"configurations" : [
+		{
+			"name" : "debug",
+			"buildType" : "debug",
+			"targetType" : "library",
+			"sourcePaths" : ["source"],
+		},
+		{
+			"name" : "release",
+			"buildType" : "release",
+			"targetType" : "library",
+			"sourcePaths" : ["source"],
+		}
+	],
+	"targetPath" : "target"
+}
